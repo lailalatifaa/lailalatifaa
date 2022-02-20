@@ -1,0 +1,22 @@
+main > div{
+    border-bottom: 1px solid black;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+.biodata{
+    display: flex;
+}
+.biodata__foto{
+    max-width: 300px;
+    height: auto;
+    margin-right: 1rem;
+}
+.skills__desc{
+    display: flex;
+}
+.skills__name{
+    margin-right: 10px;
+}
+.skills__name > div {
+    font-size: 18px;
+}
