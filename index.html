@@ -1,73 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/style/style.css">
-    <title>Laila Latifa Putri personal site</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style/index.css" />
+    <title>tugas-2-webdev</title>
+  </head>
+  <body>
     <main>
-        <div class="biodata">
-            <img src="./assets/img/foto-lala.jpg" alt="meng" class="biodata__foto">
-            <div class="biodata__desc">
-                <h1 class="biodata__desc__nama">Laila Latifa Putri</h1>
-                <p class="biodata__desc__status">
-                    <i>padjajaran university</i>
-                    <strong>digital business student</strong>                 
-                </p>
-                <span class="biodata__desc__riwayat">saya seorang atlet renang dengan hobi memasak dan minuman kesukaan adalah matcha frapee</span>
+      <div class="hero">
+        <div class="hero__nama">
+          <h1 class="hero__nama__lala">Laila</h1>
+          <h1 class="hero__nama__latifa">Latifa Putri</h1>
+        </div>
+        <div class="hero__image">
+          <img
+            src="./img/fullbody.png"
+            alt="foto lala"
+            class="hero__image__full"
+          />
+        </div>
+      </div>
+      <div class="profile">
+        <div class="profile__image">
+          <img src="./img/bulet.jpeg" alt="foto lala" />
+        </div>
+        <div class="profile__desc">
+          <h2>About Me</h2>
+          <p>
+            Hello, you can call me Lala. I am undergraduate digital business
+            student. I likes to learns new things especially those related to
+            management, business, technology, and entrepreneurship. I have
+            ability to communal well and other skills like able to solve
+            problems. Nice to meet you 😉
+          </p>
+        </div>
+      </div>
+      <div class="education">
+        <ul>
+          <li>
+            <div class="education__logo">
+              <img src="./img/smp.png" alt="logo smp" />
             </div>
-        </div>
-        <div class="education">
-            <h2 class="education__title">Education</h2>
-            <ul>
-                <li>2018-2021 SMAN 6 Bandung</li>
-                <li>2021-2025 Universitas Padjajaran</li>
-            </ul>
-        </div>
-        <div class="experience">
-            <table>
-                <thead>
-                    <th>
-                        YEAR
-                    </th>
-                    <th>Exprience</th>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>2018</td>
-                        <td>2 mendali emas (POPDA JABAR)</td>
-                    </tr>
-                    <tr>
-                        <td>2019</td>
-                        <td> mendali perak (INDONESIA OPEN)</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <div class="skills">
-            <h2 class="skill__title">
-                skills
-            </h2>
-            <div class="skills__desc">
-
-                <div class="skills__name">
-                    <div>Makan</div>
-                    <div>Masak</div>
-                    <div>HTML</div>
-                </div>
-                <div class="skills__star">
-                    <div>⭐⭐⭐⭐</div>
-                    <div>⭐⭐⭐</div>
-                    <div>⭐</div>
-                </div>
+            <div class="education__namasekolah">
+              <h3>SMPN 8 BANDUNG</h3>
+              <span>2015-2018</span>
             </div>
+          </li>
+          <li>
+            <div class="education__logo">
+              <img src="./img/sma.png" alt="logo sma" />
+            </div>
+            <div class="education__namasekolah">
+              <h3>SMAN 6 BANDUNG</h3>
+              <span>2018-2021</span>
+            </div>
+          </li>
+          <li>
+            <div class="education__logo">
+              <img src="./img/unpad.png" alt="logo kampus" />
+            </div>
+            <div class="education__namasekolah">
+              <h3>UNIVERSITAS PADJAJARAN</h3>
+              <span>2021-sekarang</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="experience">
+        <div class="experience__title">
+          <h2>experience</h2>
         </div>
+        <ul>
+          <li class="experience__medal">
+            <img
+              src="./img/emas.jpeg"
+              alt="mendali emas"
+              class="experience__medal__image"
+            />
+            <p class="experience__medal__text">medali emas popda 2018</p>
+          </li>
+          <li class="experience__medal">
+            <img
+              src="./img/perak.jpeg"
+              alt="mendali perak"
+              class="experience__medal__image"
+            />
+            <p class="experience__medal__text">medali perak popda 2018</p>
+          </li>
+        </ul>
+      </div>
+      <div class="skills">
+        <h2 class="skills__title">skills</h2>
+        <div class="skills__desc">
+          <div class="skills__name">
+            <div>Makan</div>
+            <div>Masak</div>
+            <div>HTML</div>
+            <div>CSS</div>
+          </div>
+          <div class="skills__star">
+            <div class="skills__star__progress">
+              <div class="progress"></div>
+            </div>
+            <div class="skills__star__progress">
+              <div class="progress"></div>
+            </div>
+            <div class="skills__star__progress">
+              <div class="progress"></div>
+            </div>
+            <div class="skills__star__progress">
+              <div class="progress"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact">
+        <div class="contact__btn">
+            <a href="./contact.html">Contact Me</a>
+        </div>        
+      </div>
     </main>
     <footer>
-        <p>©️ copyright Laila Latifa 2022</p>
+        <div>©️ Copyright 2022 lala</div>
     </footer>
-</body>
+    <script src="./script/index.js" type="text/javascript"></script> 
+  </body>
 </html>

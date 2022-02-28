@@ -1,0 +1,264 @@
+body {
+  margin: 0;
+  background-color: rgb(250, 215, 221);
+  font-family: "Poppins", sans-serif;
+  main {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  &__nama {
+    font-size: 30px;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: right;
+    > h1 {
+      margin: 0;
+      line-height: 1.2;
+    }
+    &__lala {
+      color: white;
+      text-shadow: 0 0 3px black;
+    }
+  }
+  &__image {
+    > img {
+      max-width: 425px;
+    }
+  }
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  &__image {
+    > img {
+      border-radius: 100%;
+      max-width: 200px;
+      height: auto;
+    }
+  }
+  &__desc {
+    margin-left: 1.5rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    > h2 {
+      font-size: 35px;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+    > p {
+      font-size: 25px;
+      max-width: 900px;
+    }
+  }
+}
+
+.education {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  > ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 2rem;
+    }
+  }
+  &__logo {
+    > img {
+      max-width: 100px;
+    }
+  }
+  &__namasekolah {
+    margin-left: 1.5rem;
+  }
+}
+
+.experience {
+  padding-bottom: 3rem;
+  &__title {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+  > ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__medal {
+    position: relative;
+    cursor: pointer;
+    &:hover {
+      .experience__medal__image {
+        opacity: 0.2;
+      }
+      .experience__medal__text {
+        opacity: 1;
+      }
+    }
+    &__image {
+      max-width: 500px;
+      margin: 0 1.5rem;
+      opacity: 1;
+      transition: all 0.5s ease-in-out;
+    }
+
+    &__text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 30px;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 800;
+      margin: 0;
+      opacity: 0;
+      transition: all 0.5s ease-in-out;
+    }
+  }
+}
+
+.skills {
+  padding-bottom: 3rem;
+  &__title {
+    font-size: 35px;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+
+  &__desc {
+    display: flex;
+  }
+
+  &__name {
+    margin-right: 10px;
+    font-size: 25px;
+  }
+
+  &__star {
+    &__progress {
+      border: 1px solid black;
+      border-radius: 25px;
+      width: 800px;
+      height: 25px;
+      margin-top: 8px;
+      margin-left: 35px;
+      .progress {
+        height: 25px;
+        border-radius: 25px;
+      }
+      &:nth-child(1) {
+        .progress {
+          background-color: rgb(170, 22, 72);
+          width: 800px;
+        }
+      }
+      &:nth-child(2) {
+        .progress {
+          background-color: rgb(170, 22, 72);
+          width: 700px;
+        }
+      }
+      &:nth-child(3) {
+        .progress {
+          background-color: rgb(170, 22, 72);
+          width: 500px;
+        }
+      }
+      &:nth-child(4) {
+        .progress {
+          background-color: rgb(170, 22, 72);
+          width: 400px;
+        }
+      }
+    }
+  }
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+  &__btn {
+    background: linear-gradient(
+      168deg,
+      rgba(170, 22, 72, 1) 0%,
+      rgba(218, 0, 255, 1) 100%
+    );
+    border-radius: 50px;
+    display: inline-block;
+    padding: 15px 1.5rem;;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    margin: 0 auto;
+     > a {
+         text-decoration: none;
+         color: white
+     }
+
+    &:hover {
+      background: linear-gradient(
+        168deg,
+        rgba(218, 0, 255, 1) 0%,
+        rgba(170, 22, 72, 1) 100%
+      );
+    }
+  }
+  
+}
+
+.contact__form {
+    max-width: 500px;
+    margin: 1.5rem;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 15px;
+    &__title {
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    &__social {
+      border-bottom: 1px solid gray;
+      padding-bottom: 1rem;
+    }
+
+    &__form {
+      padding-top: 1rem;
+      .form {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+      }
+      label {
+        margin-right: 1rem;
+      }
+      input {
+        width: 300px;
+      }
+      input[type="textarea"] {
+        height: 300px;
+      }
+    }
+  }
+
+footer {
+    background-color: #aa1648;
+    color: white;
+    padding: 3rem 1rem;
+}
